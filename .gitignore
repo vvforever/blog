@@ -1,0 +1,10 @@
+Project/.idea
+Project/__pycache__
+Project/venv
+*.pyc
+*.tmp
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/src.iml
+.idea/vcs.xml
