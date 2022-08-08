@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{# note: commented-out template because we no longer use this
+    {% block title %}Blog{% endblock %}
+#}
+{% block title %}Blog{% endblock %}
+
+{% block body %}
+
+ {% for post in posts if post.is_active %}
+			<div class="container pt140 pb140" data-background="http://placehold.it/1200x800">
+				<div class="pt140 pb140">
+
+					<a href="{{ url_for('get_post', post_id=post.id) }}" class="entrance">
+						<h3 class="title mb10">{{ post.title }}</h3>
+						<p class="separator"></p>
+						<p class="small capitalize serif">{{ post.create_date}}</p>
+					</a>
+
+				</div>
+			</div>
+ {% endfor %}
+
+
+{% endblock body %}
+
+
+
