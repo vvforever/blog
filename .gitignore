@@ -1,3 +1,4 @@
+.gitignore
 Project/.idea
 Project/__pycache__
 Project/venv
